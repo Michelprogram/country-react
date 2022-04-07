@@ -1,8 +1,9 @@
 import React from 'react';
+import ICountry from '../Interfaces/CountryInterface';
 
-const Card = (props: any) => {
+const Card = (props: { country: ICountry }) => {
 
-    const country = props.country
+    const country: ICountry = props.country
 
     return (
         <li className="card">

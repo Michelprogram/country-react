@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Card from './Card';
 
+import ICountry from '../Interfaces/CountryInterface';
+
 const Countries = () => {
 
     const [data, setData] = useState([])
@@ -24,19 +26,25 @@ const Countries = () => {
                 {
                     radios.map((continent) => (
                         <li>
-                            <input type="radio" id={continent} name="continentRadio"
+                            <input type="radio" id={continent}
+                                name="continentRadio"
+                                checked={continent === selectedRadio}
                                 onChange={(el) => setSelectedRadio(el.target.id)} />
                             <label htmlFor={continent}>{continent}</label>
                         </li>
                     ))
                 }
             </ul>
+            {selectedRadio && (
+                <button onClick={() => setSelectedRadio("")}>Refresh</button>
+            )}
             <ul>
                 {
                     data
-                        .filter((country: any) => country.continents[0].includes(selectedRadio))
+                        .filter((country: ICountry) => country.continents[0].includes(selectedRadio))
+                        .sort((a: ICountry, b: ICountry) => b.population - a.population)
                         .slice(0, rangeValue)
-                        .map((element: Object, index: number) => {
+                        .map((element: ICountry, index: number) => {
                             return <Card key={index} country={element} />
                         })
                 }
