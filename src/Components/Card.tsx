@@ -1,9 +1,7 @@
 import React from 'react';
-import ICountry from '../Interfaces/CountryInterface';
+import { ICountryProps } from '../Interfaces/CountryInterface';
 
-const Card = (props: { country: ICountry }) => {
-
-    const country: ICountry = props.country
+const Card = ({ country }: ICountryProps) => {
 
     return (
         <li className="card">

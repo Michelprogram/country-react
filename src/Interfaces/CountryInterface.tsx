@@ -1,5 +1,8 @@
-interface ICountry {
+export interface ICountryProps {
+    country: ICountry
+}
 
+export interface ICountry {
     flags: IFlags
     translations: ITranslations
     continents: Array<string>
@@ -17,6 +20,3 @@ interface ITranslations {
         common: string
     }
 }
-
-
-export default ICountry
