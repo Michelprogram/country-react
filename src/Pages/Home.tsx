@@ -3,6 +3,7 @@ import Navigation from '../Components/Navigation';
 import Logo from '../Components/Logo';
 import Countries from '../Components/Countries';
 import UserContext from '../UserContext';
+import { Button } from 'antd';
 
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
             <Logo />
             <Navigation />
             <Countries />
-            {user ? <button onClick={() => setUser(null)}>Logout</button> : ""}
+            {user ? <Button onClick={() => setUser(null)}>Logout</Button> : ""}
             <p className="context">{JSON.stringify(user, null, 2)}</p>
         </div>
     );
