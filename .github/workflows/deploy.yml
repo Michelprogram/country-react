@@ -29,6 +29,6 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add build
-          git commit -m "Deploy to gh-pages" -f
+          git add build -f
+          git commit -m "Deploy to gh-pages"
           git subtree push --prefix build origin gh-pages
