@@ -1,30 +1,141 @@
-# React + TypeScript + Vite
+<div id="top"></div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+    <img src="public/imgs/react-logo.png" alt="Logo" width="80" height="80">
 
-## Expanding the ESLint configuration
+  <h3 align="center">First application in react</h3>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  <p align="center">Learn about react and how to use context, antd and react-router</p>
+</div>
 
-- Configure the top-level `parserOptions` property like this:
+ <br />  
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">🧭 About The Project</a>
+      <ul>
+        <li><a href="#built-with">🏗️ Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">📋 Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">🗺️ Prerequisites</a></li>
+        <li><a href="#installation">⚙️ Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">💾 Usage</a></li>
+    <li><a href="#contributing">🔗 Contributing</a></li>
+    <li><a href="#license">📰 License</a></li>
+    <li><a href="#contact">📫 Contact</a></li>
+    <li><a href="#acknowledgments">⛱️ Acknowledgments</a></li>
+  </ol>
+</details>
+
+<br>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## 🧭 About The Project
+
+### 🏗️ Built With
+
+List of technologies / frameworks used during the project.
+
+* React
+* Scss
+* Antd
+* React-router
+
+<p align="right"><a href="#top">⬆️</a></p>
+
+
+
+
+<!-- GETTING STARTED -->
+## 📋 Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### 🗺️ Prerequisites
+
+Need nodejs and npm installed on your machine.
+
+<p align="right"><a href="#top">⬆️</a></p>
+
+
+<!-- USAGE EXAMPLES -->
+## 💾 Usage
+
+To run application :
+
+```bash
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+<p align="right"><a href="#top">⬆️</a></p>
+
+
+
+
+<!-- CONTRIBUTING -->
+## 🔗 Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right"><a href="#top">⬆️</a></p>
+
+
+
+
+<!-- LICENSE -->
+## 📰 License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right"><a href="#top">⬆️</a></p>
+
+
+
+
+<!-- CONTACT -->
+## 📫 Contact
+
+Reach me at : gauron.dorian.pro@gmail.com.
+
+Project Link: [https://github.com/Michelprogram/blind-test.git](https://github.com/Michelprogram/blind-test.git)
+
+<p align="right"><a href="#top">⬆️</a></p>
+
+
+
+
+<!-- ACKNOWLEDGMENTS -->
+## ⛱️ Acknowledgments
+
+This space is a list to resources i found helpful and would like to give credit to.
+
+* [Antd](https://ant.design/)
+* [React](https://fr.react.dev/)
+
+<p align="right"><a href="#top">⬆️</a></p>
+
+<a href="https://github.com/othneildrew/Best-README-Template">Template inspired by othneildrew</a>
