@@ -15,9 +15,9 @@ const App = () => {
     <BrowserRouter>
       <UserContext.Provider value={value}>
         <Routes>
-          <Route path={"/"} element={<Home />} />
+          <Route path={"/country-react/"} element={<Home />} />
 
-          <Route path={"/about"} element={<About />} />
+          <Route path={"/country-react/about"} element={<About />} />
 
           <Route path={"*"} element={<Error />} />
         </Routes>
